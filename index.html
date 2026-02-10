@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POV Car Racing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>POV Car Racing</h1>
+      <p>Dodge traffic, stay alive, and push your score as high as possible.</p>
+      <canvas id="game" width="900" height="600" aria-label="POV racing game"></canvas>
+      <div class="hud">
+        <span id="score">Score: 0</span>
+        <span id="status">Status: Racing</span>
+      </div>
+
+      <section class="guide" id="guide" aria-label="How to play">
+        <h2>How to Play</h2>
+        <ol>
+          <li>Your car is at the bottom of the screen in first-person (POV) view.</li>
+          <li>NPC cars spawn ahead and drive toward you in lanes.</li>
+          <li>Move left/right to avoid collisions and survive as long as possible.</li>
+          <li>Your score increases automatically over time while you stay alive.</li>
+        </ol>
+
+        <h3>Commands</h3>
+        <ul>
+          <li><kbd>←</kbd> / <kbd>A</kbd>: Move left lane</li>
+          <li><kbd>→</kbd> / <kbd>D</kbd>: Move right lane</li>
+          <li><kbd>Space</kbd>: Restart after crash</li>
+          <li><kbd>H</kbd>: Show/Hide this help panel</li>
+        </ul>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
