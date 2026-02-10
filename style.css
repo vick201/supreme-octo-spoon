@@ -1,0 +1,83 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(circle at top, #1a2f4d, #040711 55%);
+  color: #f4f7ff;
+}
+
+.game-shell {
+  width: min(940px, 95vw);
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
+
+h1 {
+  margin-bottom: 0.2rem;
+}
+
+p {
+  margin-top: 0;
+  opacity: 0.9;
+}
+
+canvas {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 18px;
+  border: 2px solid #78a4ff;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 45%);
+  background: linear-gradient(#6ab0f8 0 45%, #3e4b5a 45% 100%);
+}
+
+.hud {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+
+.guide {
+  margin: 1rem auto 0;
+  max-width: 860px;
+  text-align: left;
+  background: rgb(10 16 28 / 72%);
+  border: 1px solid #31558e;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.guide h2,
+.guide h3 {
+  margin: 0.35rem 0 0.5rem;
+}
+
+.guide ol,
+.guide ul {
+  margin: 0.35rem 0 0.8rem 1.1rem;
+  line-height: 1.4;
+}
+
+.guide kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid #7398d6;
+  border-radius: 4px;
+  background: #1a2940;
+}
+
+.guide-hidden {
+  display: none;
+}
